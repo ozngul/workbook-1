@@ -22,6 +22,11 @@ public class MathApp {
         //Step 2
         // 1. Question Find and display the highest
         int bobSalary = 45000;
+        int garySalary = 25000;
+        int higestSalary = Math.max(bobSalary,garySalary);
+        System.out.println("Highest Salary is " + higestSalary);
+        /*
+        int bobSalary = 45000;
         int garySalary = 65000;
              int highestSalary;
             if (bobSalary > garySalary) {
@@ -31,9 +36,14 @@ public class MathApp {
             highestSalary = garySalary;
             System.out.println("Highest Salary is Gary's Salary " + highestSalary);
         }
-
+*/
         // 2. Question Find and display the smallest
         int carPrice = 33000;
+        int truckPrice = 22000;
+        int smallestPrice = Math.min(carPrice,truckPrice);
+        System.out.println("Smallest price is " + smallestPrice);
+        /*
+         int carPrice = 33000;
         int truckPrice = 22000;
         int smallestPrice;
         if (carPrice < truckPrice) {
@@ -43,7 +53,7 @@ public class MathApp {
             smallestPrice = truckPrice;
             System.out.println("Smallest Price is Truck's price " + smallestPrice);
         }
-
+*/
         //3. Question Find and display the area of a circle whose radius is 7.25
         double radius = 7.25;
         double area = Math.PI * radius * radius;
