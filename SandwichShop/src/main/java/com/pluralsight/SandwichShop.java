@@ -12,6 +12,12 @@ public class SandwichShop {
         double price = 0.0;
         if (sandwichSize==1) { price = 5.45; } else if (sandwichSize==2)
         { price = 8.95; }
+        input.nextLine(); // consume the leftover newline
+        System.out.println(" Would you like the sandwich loaded (yes/no) : ");
+        String sandwichLoaded = input.nextLine();
+
+        if (sandwichLoaded.equalsIgnoreCase("yes")&& sandwichSize==1 ) { price +=1.00; } else if
+        (sandwichLoaded.equalsIgnoreCase("yes") && sandwichSize==2) { price +=1.75; }
 
         System.out.println(" Enter your age : ");
         Integer age = input.nextInt();
